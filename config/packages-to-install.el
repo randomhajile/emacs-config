@@ -16,6 +16,7 @@
 (el-get-install 'go-autocomplete)
 (el-get-install 'go-lint)
 (el-get-install 'go-mode)
+(el-get-install 'go-oracle)
 (el-get-install 'highlight-indentation)
 (el-get-install 'idomenu)
 (el-get-install 'json-mode)
