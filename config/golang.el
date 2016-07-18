@@ -8,7 +8,13 @@
     (setq exec-path (split-string path-from-shell path-separator))))
 
 (when window-system (set-exec-path-from-shell-PATH))
-(setenv "GOPATH" "/home/random/code/go-work")
+(cond
+ ((string-equal system-type "gnu/linux")
+  (setenv "GOPATH" (concat "/home/" user-login-name "/code/go-work")))
+ ((string-equal system-type "darwin")
+  (setenv "GOPATH" (concat "/Users/" user-login-name "/code/go-work")))
+ (t (error "Error: Cannot set GOPATH based on system-type")))
+
 (defun auto-complete-for-go ()
   (auto-complete-mode 1))
 (add-hook 'go-mode-hook 'auto-complete-for-go)
