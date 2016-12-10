@@ -54,3 +54,5 @@ the region."
 	     [double-mouse-5] [triple-mouse-5]))
   (global-unset-key k))
 
+;; avy
+(global-set-key (kbd "M-j") 'avy-goto-word-or-subword-1)

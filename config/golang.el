@@ -10,16 +10,11 @@
 (when window-system (set-exec-path-from-shell-PATH))
 (cond
  ((string-equal system-type "gnu/linux")
-  (setenv "GOPATH" (concat "/home/" user-login-name "/code/go-work")))
+  (setenv "GOPATH" (concat "/home/" user-login-name "/code/golang")))
  ((string-equal system-type "darwin")
-  (setenv "GOPATH" (concat "/Users/" user-login-name "/code/go-work")))
+  (setenv "GOPATH" (concat "/Users/" user-login-name "/code/golang")))
  (t (error "Error: Cannot set GOPATH based on system-type")))
 
-(defun auto-complete-for-go ()
-  (auto-complete-mode 1))
-(add-hook 'go-mode-hook 'auto-complete-for-go)
-(with-eval-after-load 'go-mode
-  (require 'go-autocomplete))
 (defun go-mode-setup ()
   (setq compile-command "go build -v && go test -v && go vet && golint")
   (define-key (current-local-map) "\C-c\C-c" 'compile)
@@ -36,8 +31,16 @@
   (if (not (string-match "go" compile-command))
       (set (make-local-variable 'compile-command)
            "go generate && go build -v && go test -v && go vet"))
-  ; Go oracle
-  (load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
+  ; Go guru
+  ;; (load-file "$GOPATH/src/golang.org/x/tools/cmd/guru/go-guru.el")
   ; Godef jump key binding
   (local-set-key (kbd "M-.") 'godef-jump))
 (add-hook 'go-mode-hook 'my-go-mode-hook)
+
+
+
+;; (defun auto-complete-for-go ()
+;;   (auto-complete-mode 1))
+;; (add-hook 'go-mode-hook 'auto-complete-for-go)
+;; (with-eval-after-load 'go-mode
+;;   (require 'go-autocomplete))
