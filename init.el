@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -27,6 +26,8 @@
 (load-user-file "config/json.el")
 (load-user-file "config/keybindings.el")
 (load-user-file "config/lisp.el")
+(load-user-file "config/python.el")
+(load-user-file "config/rust.el")
 (load-user-file "config/scheme.el")
 (load-user-file "config/sql.el")
 (load-user-file "config/theme.el")
