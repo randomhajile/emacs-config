@@ -18,6 +18,9 @@
 ;; autopair
 (add-hook 'prog-mode-hook #'autopair-mode)
 
+;; cleanup whitespace on save
+(add-hook 'before-save-hook 'whitespace-cleanup)
+
 ;; Remove completion buffer when done
 (add-hook 'minibuffer-exit-hook 
 	  '(lambda ()
