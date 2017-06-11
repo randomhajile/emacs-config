@@ -8,6 +8,7 @@
                          (name . "^\\*Messages\\*$")))
                ("git" (name . "^\\*magit[-:]"))
                ("golang" (mode . go-mode))
+               ("haskell" (mode . haskell-mode))
                ("html" (mode . html-mode))
                ("lisp" (or
                         (mode . emacs-lisp-mode)
