@@ -45,7 +45,7 @@
  '(linum-format " %7i ")
  '(package-selected-packages
    (quote
-    (autopep8 rust-mode company exec-path-from-shell find-file-in-project fuzzy highlight-indentation idomenu markdown-mode pyenv-mode slime sml-mode tuareg web-mode yasnippet py-autopep8 json-mode magit go-mode crontab-mode column-marker cider avy autopair ac-php git-commit flycheck flymake-go yaml-mode zenburn-theme seq rustfmt queue go-guru flx-ido dracula-theme))))
+    (merlin haskell-mode autopep8 rust-mode company exec-path-from-shell find-file-in-project fuzzy highlight-indentation idomenu markdown-mode pyenv-mode slime sml-mode tuareg web-mode yasnippet py-autopep8 json-mode magit go-mode crontab-mode column-marker cider avy autopair ac-php git-commit flycheck flymake-go yaml-mode zenburn-theme seq rustfmt queue go-guru flx-ido dracula-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
