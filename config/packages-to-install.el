@@ -38,4 +38,5 @@
 (install-if-needed 'web-mode)
 (install-if-needed 'with-editor)
 (install-if-needed 'xcscope)
+(install-if-needed 'yaml-mode)
 (install-if-needed 'yasnippet)
