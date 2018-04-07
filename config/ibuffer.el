@@ -17,6 +17,7 @@
                ("org" (mode . org-mode))
                ("php" (mode . php-mode))
                ("python" (mode . python-mode))
+               ("scala" (mode . scala-mode))
                ("slime" (or
                          (name . "^\\*inferior-lisp\\*")
                          (name . "^*slime-")))
