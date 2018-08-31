@@ -6,7 +6,7 @@
                ("emacs" (or
                          (name . "^\\*scratch\\*$")
                          (name . "^\\*Messages\\*$")))
-               ("git" (name . "^magit[-:]"))
+               ("git" (name . "^\\magit[-:]"))
                ("golang" (mode . go-mode))
                ("haskell" (mode . haskell-mode))
                ("html" (mode . html-mode))
