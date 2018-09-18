@@ -25,6 +25,7 @@
 (load-user-file "config/ibuffer.el")
 (load-user-file "config/json.el")
 (load-user-file "config/keybindings.el")
+(load-user-file "config/kill-ring.el")
 (load-user-file "config/lisp.el")
 (load-user-file "config/load-path.el")
 (load-user-file "config/package-management.el")
