@@ -15,6 +15,7 @@
 (install-if-needed 'dracula-theme)
 (install-if-needed 'elpy)
 (install-if-needed 'enh-ruby-mode)
+(install-if-needed 'enh-ruby-mode)
 (install-if-needed 'exec-path-from-shell)
 (install-if-needed 'fill-column-indicator)
 (install-if-needed 'find-file-in-project)
