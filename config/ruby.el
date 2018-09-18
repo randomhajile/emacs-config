@@ -2,7 +2,12 @@
 ;; Set the correct Ruby.
 (rvm-use "default" "global")
 
+;; Use enh-ruby-mode instead of the default ruby-mode.
+(add-to-list 'auto-mode-alist
+             '("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode))
+
 (add-hook 'ruby-mode-hook 'flycheck-mode)
+(add-hook 'enh-ruby-mode-hook 'flycheck-mode)
 ;; Disable ruby-reek as the next checker for flycheck.
 (flycheck-define-checker ruby-rubocop-without-reek
   "A Ruby syntax and style checker using the RuboCop tool.
@@ -36,5 +41,6 @@ See URL `http://batsov.com/rubocop/'."
    (error line-start (file-name) ":" line ":" column ": " (or "E" "F") ": "
           (optional (id (one-or-more (not (any ":")))) ": ") (message)
           line-end))
-  :modes (enh-ruby-mode ruby-mode)
-  :next-checkers ((warning . ruby-rubylint)))
+  :modes (enh-ruby-mode ruby-mode))
+
+(add-to-list 'flycheck-checkers 'ruby-rubocop-without-reek)
