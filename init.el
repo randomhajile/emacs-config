@@ -18,6 +18,7 @@
   (load-file (expand-file-name file user-init-dir)))
 
 (load-user-file "config/custom.el")
+(load-user-file "config/dired+.el")
 (load-user-file "config/dired.el")
 (load-user-file "config/experimental.el")
 (load-user-file "config/general.el")
