@@ -18,3 +18,6 @@
 
 (eval-after-load 'dired
   '(define-key dired-mode-map (kbd "M-d") 'dired-omit-mode))
+
+(eval-after-load 'dired
+  '(define-key dired-mode-map (kbd "i") 'dired-subtree-toggle))

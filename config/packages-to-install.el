@@ -11,6 +11,7 @@
 (install-if-needed 'cl-lib)
 (install-if-needed 'company)
 (install-if-needed 'dash)
+(install-if-needed 'dired-subtree)
 (install-if-needed 'dracula-theme)
 (install-if-needed 'elpy)
 (install-if-needed 'enh-ruby-mode)
