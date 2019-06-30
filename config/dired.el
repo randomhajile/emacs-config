@@ -16,6 +16,10 @@
 ;; omit dot files
 (setq dired-omit-files "^\\.[^.]")
 
+;; directories to the front of the line, please
+(setenv "LC_COLLATE" "C")
+(setq dired-listing-switches "-laGh --group-directories-first")
+
 (eval-after-load 'dired
   '(define-key dired-mode-map (kbd "M-d") 'dired-omit-mode))
 
