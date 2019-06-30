@@ -22,11 +22,11 @@
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; Remove completion buffer when done
-(add-hook 'minibuffer-exit-hook 
-	  '(lambda ()
-	     (let ((buffer "*Completions*"))
-	       (and (get-buffer buffer)
-		    (kill-buffer buffer)))))
+(add-hook 'minibuffer-exit-hook
+          '(lambda ()
+             (let ((buffer "*Completions*"))
+               (and (get-buffer buffer)
+                    (kill-buffer buffer)))))
 
 
 ;; Never use tabs.
