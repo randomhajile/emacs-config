@@ -8,12 +8,7 @@
     (setq exec-path (split-string path-from-shell path-separator))))
 
 (when window-system (set-exec-path-from-shell-PATH))
-(cond
- ((string-equal system-type "gnu/linux")
-  (setenv "GOPATH" (concat "/home/" user-login-name "/code/golang")))
- ((string-equal system-type "darwin")
-  (setenv "GOPATH" (concat "/Users/" user-login-name "/code/golang")))
- (t (error "Error: Cannot set GOPATH based on system-type")))
+(setenv "GOPATH" (concat (getenv "HOME" "/code/golang")))
 
 (defun go-mode-setup ()
   (setq compile-command "go build -v && go test -v && go vet && golint")
