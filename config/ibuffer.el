@@ -1,7 +1,6 @@
 ;; grouping in ibuffer-mode
 (setq ibuffer-saved-filter-groups
       (quote (("default"
-               ("cee" (mode . c-mode))
                ("dired" (mode . dired-mode))
                ("emacs" (or
                          (name . "^\\*scratch\\*$")
@@ -15,17 +14,11 @@
                         (mode . lisp-mode)
                         (mode . clojure-mode)))
                ("org" (mode . org-mode))
-               ("php" (mode . php-mode))
                ("python" (mode . python-mode))
-               ("scala" (mode . scala-mode))
-               ("slime" (or
-                         (name . "^\\*inferior-lisp\\*")
-                         (name . "^*slime-")))
-               ("sml" (or
-                       (mode . sml-mode)))
-               ("cider" (or
-                         (name . "^\\*cider-")
-                         (name . "\\*nrepl-")))))))
+               ("ruby" (or
+                        (mode . ruby-mode)
+                        (mode . enh-ruby-mode)))))))
+
 (add-hook 'ibuffer-mode-hook
           (lambda ()
             (ibuffer-switch-to-saved-filter-groups "default")))
