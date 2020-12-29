@@ -18,7 +18,6 @@
 (global-set-key (kbd "C-c v") 'pbpaste)
 (global-set-key (kbd "C-c x") 'pbcut)
 
-
 ;; Company mode and fci mode don't play well together. Disable fci when there
 ;; is an autocompletion popup.
 (defvar-local company-fci-mode-on-p nil)
