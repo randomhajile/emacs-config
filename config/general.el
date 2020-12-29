@@ -122,7 +122,8 @@
 
 ;; font
 (set-face-attribute 'default nil
-                    :family "Source Code Pro"
-                    :height 120
+                    ;; :family "TerminessTTF Nerd Font"
+                    :family "Terminus"
+                    :height 110
                     :weight 'normal
                     :width 'normal)
