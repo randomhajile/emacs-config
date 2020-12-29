@@ -1,10 +1,12 @@
 (require 'flycheck)
 ;; Set the correct Ruby.
-(rvm-use "default" "global")
+(rbenv-use-global)
 
 ;; Use enh-ruby-mode instead of the default ruby-mode.
+;; (add-to-list 'auto-mode-alist
+;;              '("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist
-             '("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode))
+             '("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . ruby-mode))
 
 (add-hook 'ruby-mode-hook 'flycheck-mode)
 (add-hook 'enh-ruby-mode-hook 'flycheck-mode)
@@ -44,3 +46,5 @@ See URL `http://batsov.com/rubocop/'."
   :modes (enh-ruby-mode ruby-mode))
 
 (add-to-list 'flycheck-checkers 'ruby-rubocop-without-reek)
+
+(setq enh-ruby-deep-indent-paren nil)
