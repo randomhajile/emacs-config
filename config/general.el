@@ -16,7 +16,7 @@
 (global-git-gutter-mode 1)
 
 ;; autopair
-(add-hook 'prog-mode-hook #'autopair-mode)
+(add-hook 'prog-mode-hook #'electric-pair-mode)
 
 ;; cleanup whitespace on save
 (add-hook 'before-save-hook 'whitespace-cleanup)
