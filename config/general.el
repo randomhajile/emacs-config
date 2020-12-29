@@ -29,6 +29,9 @@
                     (kill-buffer buffer)))))
 
 
+;; editorconfig
+(editorconfig-mode 1)
+
 ;; Never use tabs.
 (setq-default indent-tabs-mode nil)
 
