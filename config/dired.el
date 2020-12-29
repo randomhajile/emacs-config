@@ -16,6 +16,10 @@
 ;; omit dot files
 (setq dired-omit-files "^\\.[^.]")
 
+;; set ls program on mac
+(when (string-equal system-type "darwin")
+  (setq insert-directory-program "gls"))
+
 ;; directories to the front of the line, please
 (setenv "LC_COLLATE" "C")
 (setq dired-listing-switches "-laGh --group-directories-first")
