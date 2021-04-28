@@ -15,7 +15,7 @@
 ;; Git Gutter Fringe, but only in graphical mode
 (global-git-gutter-mode 1)
 
-;; autopair
+;; pairs
 (add-hook 'prog-mode-hook #'electric-pair-mode)
 
 ;; cleanup whitespace on save
