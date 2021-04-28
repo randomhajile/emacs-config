@@ -9,8 +9,10 @@
                ("golang" (mode . go-mode))
                ("html" (mode . html-mode))
                ("org" (mode . org-mode))
-               ("ruby" (mode . ruby-mode))
                ("python" (mode . python-mode))
+               ("ruby" (mode . ruby-mode))
+               ("shell" (mode . sh-mode))
+               ("yaml" (mode . yaml-mode))
                ("terraform" (mode . terraform-mode))))))
 (add-hook 'ibuffer-mode-hook
           (lambda ()
