@@ -10,7 +10,6 @@
 (use-package dash :ensure t)
 (use-package dired-subtree :ensure t)
 (use-package dockerfile-mode :ensure t)
-(use-package dracula-theme :ensure t)
 (use-package editorconfig :ensure t)
 (use-package elpy :ensure t)
 (use-package enh-ruby-mode :ensure t)
