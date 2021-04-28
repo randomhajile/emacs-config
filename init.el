@@ -42,3 +42,4 @@
 (load-user-file "config/sql.el")
 (load-user-file "config/terraform.el")
 (load-user-file "config/theme.el")
+(load-user-file "config/typescript.el")
