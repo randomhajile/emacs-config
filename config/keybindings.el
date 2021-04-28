@@ -62,3 +62,7 @@ the region."
           (lambda () (local-set-key (kbd "C-c C-n") #'flycheck-next-error)))
 (add-hook 'prog-mode-hook
           (lambda () (local-set-key (kbd "C-c C-p") #'flycheck-previous-error)))
+
+;; mac stuff
+(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'alt)
