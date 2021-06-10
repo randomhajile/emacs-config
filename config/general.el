@@ -83,10 +83,6 @@
 ;; set the shell for ansi-term
 (setq explicit-shell-file-name "/bin/zsh")
 
-;; adding to exec path
-(setenv "PATH" (concat (getenv "PATH") ":/home/random/bin"))
-(setq exec-path (append exec-path '(":/home/random/bin")))
-
 ;; This is a workaround for a problem with how fci-mode interacts
 ;; with autocomplete's popup menu. It will temporarily disable
 ;; fci-mode when the popup happens.
