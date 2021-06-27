@@ -1,6 +1,12 @@
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 
+(unless (package-installed-p 'quelpa-use-package)
+  (package-install 'quelpa-use-package))
+
+(require 'quelpa-use-package)
+(use-package dired+
+  :quelpa (dired+ :fetcher url :url "https://www.emacswiki.org/emacs/download/dired+.el"))
 (use-package auto-complete :ensure t)
 (use-package autopair :ensure t)
 (use-package avy :ensure t)

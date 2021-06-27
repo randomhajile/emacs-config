@@ -20,7 +20,6 @@
 (load-user-file "config/package-management.el")
 (load-user-file "config/packages-to-install.el")
 (load-user-file "config/custom.el")
-(load-user-file "config/dired+.el")
 (load-user-file "config/dired.el")
 (load-user-file "config/experimental.el")
 (load-user-file "config/general.el")
