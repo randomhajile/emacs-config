@@ -7,6 +7,8 @@
 (require 'quelpa-use-package)
 (use-package dired+
   :quelpa (dired+ :fetcher url :url "https://www.emacswiki.org/emacs/download/dired+.el"))
+(use-package guess-style
+  :quelpa (guess-style :fetcher github :repo "nschum/guess-style"))
 (use-package auto-complete :ensure t)
 (use-package autopair :ensure t)
 (use-package avy :ensure t)
