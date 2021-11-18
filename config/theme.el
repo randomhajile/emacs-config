@@ -1,1 +1,1 @@
-(load-theme 'night-owl)
+(load-theme 'night-owl t)
