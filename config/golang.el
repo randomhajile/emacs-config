@@ -8,7 +8,7 @@
     (setq exec-path (split-string path-from-shell path-separator))))
 
 (when window-system (set-exec-path-from-shell-PATH))
-(setenv "GOPATH" (concat (getenv "HOME" "/code/golang")))
+(setenv "GOPATH" (concat (getenv "HOME") "/code/golang"))
 
 (defun go-mode-setup ()
   (setq compile-command "go build -v && go test -v && go vet && golint")
