@@ -41,6 +41,7 @@ the region."
   'exchange-point-and-mark-no-activate)
 
 (global-set-key (kbd "M-o") 'other-window)
+(global-set-key (kbd "M-]") 'sort-lines)
 
 ;; disable mouse
 (setq mouse-wheel-follow-mouth 1)
