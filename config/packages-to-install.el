@@ -49,6 +49,7 @@
 (use-package slime :ensure t)
 (use-package sml-mode :ensure t)
 (use-package terraform-mode :ensure t)
+(use-package tide :ensure t)
 (use-package tuareg :ensure t)
 (use-package undo-tree :ensure t)
 (use-package virtualenvwrapper :ensure t)
