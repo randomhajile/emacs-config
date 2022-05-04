@@ -119,6 +119,10 @@
 (setq split-height-threshold 80)
 (setq split-width-threshold 160)
 
+;; undo-tree scatters .~undo-tree~ files all over the place.
+;; Set a place for them.
+(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo-tree")))
+
 ;; font
 (set-face-attribute 'default nil
                     ;; :family "TerminessTTF Nerd Font"
