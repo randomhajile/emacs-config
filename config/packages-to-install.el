@@ -10,7 +10,6 @@
 (use-package guess-style
   :quelpa (guess-style :fetcher github :repo "nschum/guess-style"))
 (use-package auto-complete :ensure t)
-(use-package autopair :ensure t)
 (use-package avy :ensure t)
 (use-package cargo :ensure t)
 (use-package cl-lib :ensure t)
