@@ -23,11 +23,8 @@ the region."
   (exchange-point-and-mark)
   (deactivate-mark nil))
 
-;; Use ibuffer instead of the regular buffer list. KEYBINDING
+;; Use ibuffer instead of the regular buffer list.
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-
-;; Newline indent globally
-(global-set-key (kbd "RET") 'newline-and-indent)
 
 ;; A nice keybinding for goto-line
 (global-set-key (kbd "C-;") 'goto-line)
